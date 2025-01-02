@@ -2,7 +2,7 @@
 x-trestle-comp-def-rules:
   component_title:
     - name: rule-ac-1
-      description: Rule for ac-1
+      description: Rule for updating markdown ac-1 
 x-trestle-param-values:
   ac-1_prm_1:
   ac-01_odp.01:
