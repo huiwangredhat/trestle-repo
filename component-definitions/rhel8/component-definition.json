@@ -1,0 +1,19 @@
+{
+  "component-definition": {
+    "uuid": "0a05cee2-54af-47b9-aeb4-f1a0394249ac",
+    "metadata": {
+      "title": "Component definition for rhel8",
+      "last-modified": "2025-01-06T17:04:01.826667+08:00",
+      "version": "1.0",
+      "oscal-version": "1.1.2"
+    },
+    "components": [
+      {
+        "uuid": "e384859a-48b1-446f-907d-0865175195b0",
+        "type": "validation",
+        "title": "rhel8",
+        "description": "rhel8"
+      }
+    ]
+  }
+}
