@@ -1,0 +1,19 @@
+{
+  "component-definition": {
+    "uuid": "652059b9-253f-4499-b9ff-ba4ee468a371",
+    "metadata": {
+      "title": "Component definition for rhel9",
+      "last-modified": "2025-01-07T21:15:56.474442+08:00",
+      "version": "1.0",
+      "oscal-version": "1.1.2"
+    },
+    "components": [
+      {
+        "uuid": "2b63ff0d-6e59-4793-bc77-d1f39a9476af",
+        "type": "service",
+        "title": "rhel9",
+        "description": "Red Hat Enterprise Linux 9"
+      }
+    ]
+  }
+}
