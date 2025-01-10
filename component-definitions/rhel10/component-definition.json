@@ -1,0 +1,45 @@
+{
+  "component-definition": {
+    "uuid": "7347950e-53df-494b-8d55-a32a08b3dc94",
+    "metadata": {
+      "title": "Component definition for rhel10",
+      "last-modified": "2025-01-10T16:11:47.366592+08:00",
+      "version": "1.0",
+      "oscal-version": "1.1.2"
+    },
+    "components": [
+      {
+        "uuid": "e85e790f-5fee-4b89-94ed-d482f4630dbe",
+        "type": "service",
+        "title": "rhel10",
+        "description": "Red Hat Enterprise Linux 10",
+        "props": [
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_permissions_kube_apiserver",
+            "remarks": "rule_set_201"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure that the API server pod specification file permissions are set to 644 or more restrictive",
+            "remarks": "rule_set_201"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_permissions_kube_apiserver",
+            "remarks": "rule_set_201"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Check that the API server pod specification file permissions are set to 644 or more restrictive",
+            "remarks": "rule_set_201"
+          }
+        ]
+      }
+    ]
+  }
+}
