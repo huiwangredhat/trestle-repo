@@ -1,15 +1,15 @@
 {
   "component-definition": {
-    "uuid": "7347950e-53df-494b-8d55-a32a08b3dc94",
+    "uuid": "b47a902b-dfc8-49d8-aa25-49264ee23373",
     "metadata": {
       "title": "Component definition for rhel10",
-      "last-modified": "2025-01-10T16:11:47.366592+08:00",
+      "last-modified": "2025-01-10T16:18:24.561522+08:00",
       "version": "1.0",
       "oscal-version": "1.1.2"
     },
     "components": [
       {
-        "uuid": "e85e790f-5fee-4b89-94ed-d482f4630dbe",
+        "uuid": "0a6855db-d59e-4f26-8bd0-62ceea34d948",
         "type": "service",
         "title": "rhel10",
         "description": "Red Hat Enterprise Linux 10",
