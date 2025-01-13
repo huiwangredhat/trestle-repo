@@ -3,11 +3,67 @@
     "uuid": "68797ad0-5bb0-4214-bd6c-edb8fa63e099",
     "metadata": {
       "title": "Component definition for rhel10",
-      "last-modified": "2025-01-13T14:37:11.102896+08:00",
-      "version": "1.0",
+      "last-modified": "2025-01-13T06:39:00+00:00",
+      "version": "1.1",
       "oscal-version": "1.1.2"
     },
     "components": [
+      {
+        "uuid": "dabd29c7-b90a-4eff-972b-ed4e8f21d9ad",
+        "type": "validation",
+        "title": "openscap",
+        "description": "openscap",
+        "props": [
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_permissions_kube_apiserver",
+            "remarks": "rule_set_201"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure that the API server pod specification file permissions are set to 644 or more restrictive",
+            "remarks": "rule_set_201"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_permissions_kube_apiserver",
+            "remarks": "rule_set_201"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure that the API server pod specification file permissions are set to 644 or more restrictive",
+            "remarks": "rule_set_201"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_owner_kube_apiserver",
+            "remarks": "rule_set_202"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure that the API server pod specification file ownership is set to root:root",
+            "remarks": "rule_set_202"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_owner_kube_apiserver",
+            "remarks": "rule_set_202"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure that the API server pod specification file ownership is set to root:root",
+            "remarks": "rule_set_202"
+          }
+        ]
+      },
       {
         "uuid": "ba869a9e-7dd9-43ee-bf87-56a18698ab69",
         "type": "software",
