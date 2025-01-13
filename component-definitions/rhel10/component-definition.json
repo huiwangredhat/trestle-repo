@@ -9,6 +9,62 @@
     },
     "components": [
       {
+        "uuid": "88614452-7a1b-437f-a19c-1c5f7ff515c1",
+        "type": "validation",
+        "title": "openscap",
+        "description": "openscap",
+        "props": [
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_permissions_kube_apiserver",
+            "remarks": "rule_set_201"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure that the API server pod specification file permissions are set to 644 or more restrictive",
+            "remarks": "rule_set_201"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_permissions_kube_apiserver",
+            "remarks": "rule_set_201"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure that the API server pod specification file permissions are set to 644 or more restrictive",
+            "remarks": "rule_set_201"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_owner_kube_apiserver",
+            "remarks": "rule_set_202"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure that the API server pod specification file ownership is set to root:root",
+            "remarks": "rule_set_202"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_owner_kube_apiserver",
+            "remarks": "rule_set_202"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure that the API server pod specification file ownership is set to root:root",
+            "remarks": "rule_set_202"
+          }
+        ]
+      },
+      {
         "uuid": "6de30f19-c69d-4876-bc0c-1ad30a8fc740",
         "type": "software",
         "title": "rhel10",
