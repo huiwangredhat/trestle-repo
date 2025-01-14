@@ -1,16 +1,16 @@
 {
   "component-definition": {
-    "uuid": "62490704-b3a1-4bfa-90fd-9fc20442c9b8",
+    "uuid": "9ed5331c-0cf7-4757-82e2-cf1870752ba8",
     "metadata": {
       "title": "Component definition for rhel10",
-      "last-modified": "2025-01-14T06:25:33+00:00",
-      "version": "1.3",
+      "last-modified": "2025-01-14T14:48:47.886306+08:00",
+      "version": "1.0",
       "oscal-version": "1.1.2"
     },
     "components": [
       {
-        "uuid": "4b5a344f-7f40-48bc-a6a2-052df66e84a8",
-        "type": "service",
+        "uuid": "70962118-9fb3-4385-b4c6-b94b0536cd5e",
+        "type": "software",
         "title": "rhel10",
         "description": "Red Hat Enterprise Linux 10",
         "props": [
@@ -22,38 +22,6 @@
           },
           {
             "name": "Rule_Description",
-            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure",
-            "remarks": "rule_set_201"
-          }
-        ]
-      },
-      {
-        "uuid": "f8488a10-5fa9-4548-a06d-ed48d6972c6f",
-        "type": "validation",
-        "title": "openscap",
-        "description": "openscap",
-        "props": [
-          {
-            "name": "Rule_Id",
-            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "file_permissions_kube_apiserver",
-            "remarks": "rule_set_201"
-          },
-          {
-            "name": "Rule_Description",
-            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure",
-            "remarks": "rule_set_201"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "file_permissions_kube_apiserver",
-            "remarks": "rule_set_201"
-          },
-          {
-            "name": "Check_Description",
             "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure",
             "remarks": "rule_set_201"
