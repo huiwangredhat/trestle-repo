@@ -3,8 +3,8 @@
     "uuid": "62490704-b3a1-4bfa-90fd-9fc20442c9b8",
     "metadata": {
       "title": "Component definition for rhel10",
-      "last-modified": "2025-01-13T09:38:01+00:00",
-      "version": "1.1",
+      "last-modified": "2025-01-14T06:24:42+00:00",
+      "version": "1.2",
       "oscal-version": "1.1.2"
     },
     "components": [
@@ -55,7 +55,7 @@
           {
             "name": "Rule_Description",
             "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure that the API server pod specification file permissions are set to 644 or more restrictive",
+            "value": "Ensure",
             "remarks": "rule_set_201"
           },
           {
@@ -67,32 +67,8 @@
           {
             "name": "Check_Description",
             "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure that the API server pod specification file permissions are set to 644 or more restrictive",
+            "value": "Ensure",
             "remarks": "rule_set_201"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "file_owner_kube_apiserver",
-            "remarks": "rule_set_202"
-          },
-          {
-            "name": "Rule_Description",
-            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure that the API server pod specification file ownership is set to root:root",
-            "remarks": "rule_set_202"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "file_owner_kube_apiserver",
-            "remarks": "rule_set_202"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure that the API server pod specification file ownership is set to root:root",
-            "remarks": "rule_set_202"
           }
         ]
       }
