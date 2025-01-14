@@ -1,15 +1,15 @@
 {
   "component-definition": {
-    "uuid": "9ed5331c-0cf7-4757-82e2-cf1870752ba8",
+    "uuid": "673451eb-003d-490e-9550-ecfdc7f17213",
     "metadata": {
       "title": "Component definition for rhel10",
-      "last-modified": "2025-01-14T06:49:47+00:00",
-      "version": "1.1",
+      "last-modified": "2025-01-14T15:02:24.532008+08:00",
+      "version": "1.0",
       "oscal-version": "1.1.2"
     },
     "components": [
       {
-        "uuid": "70962118-9fb3-4385-b4c6-b94b0536cd5e",
+        "uuid": "22e3b90f-c446-42eb-8ff3-dde13434bb65",
         "type": "software",
         "title": "rhel10",
         "description": "Red Hat Enterprise Linux 10",
@@ -22,38 +22,6 @@
           },
           {
             "name": "Rule_Description",
-            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure",
-            "remarks": "rule_set_201"
-          }
-        ]
-      },
-      {
-        "uuid": "53d48865-fa92-4aa2-8af6-2e7195d8d9e9",
-        "type": "validation",
-        "title": "openscap",
-        "description": "openscap",
-        "props": [
-          {
-            "name": "Rule_Id",
-            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "file_permissions_kube_apiserver",
-            "remarks": "rule_set_201"
-          },
-          {
-            "name": "Rule_Description",
-            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure",
-            "remarks": "rule_set_201"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "file_permissions_kube_apiserver",
-            "remarks": "rule_set_201"
-          },
-          {
-            "name": "Check_Description",
             "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure",
             "remarks": "rule_set_201"
