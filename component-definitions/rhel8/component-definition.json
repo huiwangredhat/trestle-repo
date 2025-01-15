@@ -1,15 +1,15 @@
 {
   "component-definition": {
-    "uuid": "d8d2c66f-ee61-42fa-a82d-ee79ef7a5976",
+    "uuid": "ac57e1b7-4247-440e-991d-88e2c664bdcc",
     "metadata": {
       "title": "Component definition for rhel8",
-      "last-modified": "2025-01-16T00:03:24.849474+08:00",
+      "last-modified": "2025-01-16T00:08:30.455509+08:00",
       "version": "1.0",
       "oscal-version": "1.1.2"
     },
     "components": [
       {
-        "uuid": "48d19e9e-c5aa-4e17-832e-34acc0259773",
+        "uuid": "7c5f0633-adee-4ed7-9924-4f6e926f97fc",
         "type": "validation",
         "title": "openscap",
         "description": "openscap",
