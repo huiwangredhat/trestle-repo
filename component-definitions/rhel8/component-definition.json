@@ -1,59 +1,15 @@
 {
   "component-definition": {
-    "uuid": "a344e39d-d4ad-465f-9a1a-52f7e8049af7",
+    "uuid": "fff42170-d96c-478b-b9f9-4ceb183afd7d",
     "metadata": {
       "title": "Component definition for rhel8",
-      "last-modified": "2025-01-15T23:46:54.794009+08:00",
-      "version": "1.1",
+      "last-modified": "2025-01-16T00:02:22.380060+08:00",
+      "version": "1.0",
       "oscal-version": "1.1.2"
     },
     "components": [
       {
-        "uuid": "e7cd0f14-61c0-4586-8bb6-6fe3c96b1ca3",
-        "type": "software",
-        "title": "rhel8",
-        "description": "Red Hat Enterprise Linux 8",
-        "props": [
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "configure_crypto_policy",
-            "remarks": "rule_set_0"
-          },
-          {
-            "name": "Rule_Description",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Pending update",
-            "remarks": "rule_set_0"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "file_groupownership_sshd_private_key",
-            "remarks": "rule_set_1"
-          },
-          {
-            "name": "Rule_Description",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Pending update",
-            "remarks": "rule_set_1"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "sshd_set_keepalive",
-            "remarks": "rule_set_2"
-          },
-          {
-            "name": "Rule_Description",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Pending update",
-            "remarks": "rule_set_2"
-          }
-        ]
-      },
-      {
-        "uuid": "dbabb110-c855-440c-b67e-b9671efb1e08",
+        "uuid": "9d7a43e4-a1f4-46a4-932d-61d3c5f98f7f",
         "type": "validation",
         "title": "openscap",
         "description": "openscap",
