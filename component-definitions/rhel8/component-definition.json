@@ -3,8 +3,8 @@
     "uuid": "7c969aae-5298-4329-9c64-61c544ad096b",
     "metadata": {
       "title": "Component definition for rhel8",
-      "last-modified": "2025-01-16T01:18:29.651289+08:00",
-      "version": "1.0",
+      "last-modified": "2025-01-16T01:22:47.337376+08:00",
+      "version": "1.1",
       "oscal-version": "1.1.2"
     },
     "components": [
@@ -55,6 +55,30 @@
             "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure that garbage collection is configured as appropriate",
             "remarks": "rule_set_339"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "kubelet_eviction_thresholds_set_hard_imagefs_available",
+            "remarks": "rule_set_340"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure that garbage collection is configured as appropriate",
+            "remarks": "rule_set_340"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "kubelet_eviction_thresholds_set_hard_imagefs_available",
+            "remarks": "rule_set_340"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure that garbage collection is configured as appropriate",
+            "remarks": "rule_set_340"
           }
         ]
       }
