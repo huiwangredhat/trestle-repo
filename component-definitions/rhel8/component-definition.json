@@ -1,15 +1,15 @@
 {
   "component-definition": {
-    "uuid": "0e8da0de-6f7f-49e2-9666-ef6d6056d757",
+    "uuid": "a344e39d-d4ad-465f-9a1a-52f7e8049af7",
     "metadata": {
       "title": "Component definition for rhel8",
-      "last-modified": "2025-01-15T23:44:00.484348+08:00",
+      "last-modified": "2025-01-15T23:46:30.958443+08:00",
       "version": "1.0",
       "oscal-version": "1.1.2"
     },
     "components": [
       {
-        "uuid": "17d79cdb-348b-4228-87ac-23230e79ed3b",
+        "uuid": "e7cd0f14-61c0-4586-8bb6-6fe3c96b1ca3",
         "type": "software",
         "title": "rhel8",
         "description": "Red Hat Enterprise Linux 8",
