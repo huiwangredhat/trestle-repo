@@ -1,15 +1,15 @@
 {
   "component-definition": {
-    "uuid": "0ff615c7-6b1b-4683-a835-796a3e07bb9f",
+    "uuid": "50c2d955-dde5-459c-b1a1-f7f6605f6392",
     "metadata": {
       "title": "Component definition for rhel8",
-      "last-modified": "2025-01-15T12:35:05.305218+08:00",
-      "version": "1.1",
+      "last-modified": "2025-01-15T23:43:43.719862+08:00",
+      "version": "1.0",
       "oscal-version": "1.1.2"
     },
     "components": [
       {
-        "uuid": "204994f4-3ede-4301-9933-f763ae2c3969",
+        "uuid": "bf11a83a-2da9-43d8-93ff-2fa9067f67b7",
         "type": "software",
         "title": "rhel8",
         "description": "Red Hat Enterprise Linux 8",
@@ -46,86 +46,6 @@
           },
           {
             "name": "Rule_Description",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Pending update",
-            "remarks": "rule_set_2"
-          }
-        ]
-      },
-      {
-        "uuid": "c4abafdc-e5b2-47d8-b43a-289f488110d4",
-        "type": "validation",
-        "title": "openscap",
-        "description": "openscap",
-        "props": [
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "configure_crypto_policy",
-            "remarks": "rule_set_0"
-          },
-          {
-            "name": "Rule_Description",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Pending update",
-            "remarks": "rule_set_0"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "configure_crypto_policy",
-            "remarks": "rule_set_0"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Pending update",
-            "remarks": "rule_set_0"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "file_groupownership_sshd_private_key",
-            "remarks": "rule_set_1"
-          },
-          {
-            "name": "Rule_Description",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Pending update",
-            "remarks": "rule_set_1"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "file_groupownership_sshd_private_key",
-            "remarks": "rule_set_1"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Pending update",
-            "remarks": "rule_set_1"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "sshd_set_keepalive",
-            "remarks": "rule_set_2"
-          },
-          {
-            "name": "Rule_Description",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Pending update",
-            "remarks": "rule_set_2"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "sshd_set_keepalive",
-            "remarks": "rule_set_2"
-          },
-          {
-            "name": "Check_Description",
             "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
             "value": "Pending update",
             "remarks": "rule_set_2"
