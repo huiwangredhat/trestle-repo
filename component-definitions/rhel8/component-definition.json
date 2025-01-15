@@ -1,15 +1,15 @@
 {
   "component-definition": {
-    "uuid": "f5b7fb3a-12d9-424a-8b79-09a464e0564b",
+    "uuid": "6e531e04-6080-4e9a-bd57-d3fec9f63c0f",
     "metadata": {
       "title": "Component definition for rhel8",
-      "last-modified": "2025-01-16T00:30:54.856571+08:00",
-      "version": "1.1",
+      "last-modified": "2025-01-16T00:59:04.705042+08:00",
+      "version": "1.0",
       "oscal-version": "1.1.2"
     },
     "components": [
       {
-        "uuid": "216f56ba-2c6e-4c4d-ac00-198c12aacf9d",
+        "uuid": "de12bb5a-52d8-4d17-8902-3dbf3bca4529",
         "type": "validation",
         "title": "openscap",
         "description": "openscap",
@@ -24,6 +24,36 @@
             "name": "Rule_Description",
             "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure that garbage collection is configured as appropriate",
+            "remarks": "rule_set_339"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "kubelet_eviction_thresholds_set_hard_nodefs_inodesfree",
+            "remarks": "rule_set_339"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure that garbage collection is configured as appropriate",
+            "remarks": "rule_set_339"
+          },
+          {
+            "name": "Parameter_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_kubelet_eviction_thresholds_set_hard_nodefs_inodesfree",
+            "remarks": "rule_set_339"
+          },
+          {
+            "name": "Parameter_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Node FS inodes Free for the EvictonHard threshold to trigger.",
+            "remarks": "rule_set_339"
+          },
+          {
+            "name": "Parameter_Value_Alternatives",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{'default': '4%', '4pc': '4%', '5pc': '5%', '10pc': '10%', '15pc': '15%', '20pc': '20%'}",
             "remarks": "rule_set_339"
           },
           {
