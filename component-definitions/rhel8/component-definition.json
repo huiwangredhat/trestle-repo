@@ -3,8 +3,8 @@
     "uuid": "631b03dd-d019-43f3-adc8-665be308ec85",
     "metadata": {
       "title": "Component definition for rhel8",
-      "last-modified": "2025-01-16T13:43:37.871090+08:00",
-      "version": "1.1",
+      "last-modified": "2025-01-16T13:45:38.068099+08:00",
+      "version": "1.2",
       "oscal-version": "1.1.2"
     },
     "components": [
@@ -60,75 +60,93 @@
         "props": [
           {
             "name": "Rule_Id",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "configure_crypto_policy",
-            "remarks": "rule_set_0"
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "kubelet_eviction_thresholds_set_hard_nodefs_inodesfree",
+            "remarks": "rule_set_337"
           },
           {
             "name": "Rule_Description",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Pending update",
-            "remarks": "rule_set_0"
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure that garbage collection is configured as appropriate",
+            "remarks": "rule_set_337"
           },
           {
             "name": "Check_Id",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "configure_crypto_policy",
-            "remarks": "rule_set_0"
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "kubelet_eviction_thresholds_set_hard_nodefs_inodesfree",
+            "remarks": "rule_set_337"
           },
           {
             "name": "Check_Description",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Pending update",
-            "remarks": "rule_set_0"
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure that garbage collection is configured as appropriate",
+            "remarks": "rule_set_337"
           },
           {
             "name": "Rule_Id",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "file_groupownership_sshd_private_key",
-            "remarks": "rule_set_1"
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "kubelet_eviction_thresholds_set_hard_memory_available",
+            "remarks": "rule_set_338"
           },
           {
             "name": "Rule_Description",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Pending update",
-            "remarks": "rule_set_1"
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure that garbage collection is configured as appropriate",
+            "remarks": "rule_set_338"
+          },
+          {
+            "name": "Parameter_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "var_kubelet_eviction_thresholds_set_hard_memory_available",
+            "remarks": "rule_set_338"
+          },
+          {
+            "name": "Parameter_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Memory Available for the EvictonHard threshold to trigger.",
+            "remarks": "rule_set_338"
+          },
+          {
+            "name": "Parameter_Value_Alternatives",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "{'default': '200Mi'}",
+            "remarks": "rule_set_338"
           },
           {
             "name": "Check_Id",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "file_groupownership_sshd_private_key",
-            "remarks": "rule_set_1"
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "kubelet_eviction_thresholds_set_hard_memory_available",
+            "remarks": "rule_set_338"
           },
           {
             "name": "Check_Description",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Pending update",
-            "remarks": "rule_set_1"
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure that garbage collection is configured as appropriate",
+            "remarks": "rule_set_338"
           },
           {
             "name": "Rule_Id",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "sshd_set_keepalive",
-            "remarks": "rule_set_2"
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "kubelet_eviction_thresholds_set_hard_nodefs_available",
+            "remarks": "rule_set_339"
           },
           {
             "name": "Rule_Description",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Pending update",
-            "remarks": "rule_set_2"
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure that garbage collection is configured as appropriate",
+            "remarks": "rule_set_339"
           },
           {
             "name": "Check_Id",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "sshd_set_keepalive",
-            "remarks": "rule_set_2"
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "kubelet_eviction_thresholds_set_hard_nodefs_available",
+            "remarks": "rule_set_339"
           },
           {
             "name": "Check_Description",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "Pending update",
-            "remarks": "rule_set_2"
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure that garbage collection is configured as appropriate",
+            "remarks": "rule_set_339"
           }
         ]
       }
