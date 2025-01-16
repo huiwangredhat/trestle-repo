@@ -3,8 +3,8 @@
     "uuid": "6602377a-09f7-42b3-bbd0-e144bafed591",
     "metadata": {
       "title": "Component definition for rhel8",
-      "last-modified": "2025-01-16T14:43:29.937040+08:00",
-      "version": "1.0",
+      "last-modified": "2025-01-16T06:43:54+00:00",
+      "version": "1.1",
       "oscal-version": "1.1.2"
     },
     "components": [
@@ -22,6 +22,38 @@
           },
           {
             "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure",
+            "remarks": "rule_set_201"
+          }
+        ]
+      },
+      {
+        "uuid": "7b65f608-2dca-455b-b76b-5b9c114dd0df",
+        "type": "validation",
+        "title": "openscap",
+        "description": "openscap",
+        "props": [
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_permissions_kube_apiserver",
+            "remarks": "rule_set_201"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure",
+            "remarks": "rule_set_201"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "file_permissions_kube_apiserver",
+            "remarks": "rule_set_201"
+          },
+          {
+            "name": "Check_Description",
             "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure",
             "remarks": "rule_set_201"
