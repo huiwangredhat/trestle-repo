@@ -1,15 +1,15 @@
 {
   "component-definition": {
-    "uuid": "b6492768-f423-4095-ba10-c80e65062df8",
+    "uuid": "1aad1114-e3bb-4cf4-aa24-6a5aaab03339",
     "metadata": {
       "title": "Component definition for rhel8",
-      "last-modified": "2025-01-22T16:11:16.159254+08:00",
+      "last-modified": "2025-01-22T19:46:04.832569+08:00",
       "version": "1.0",
       "oscal-version": "1.1.2"
     },
     "components": [
       {
-        "uuid": "1af7339d-80cb-43c1-ba36-f3d9f518c61d",
+        "uuid": "bfdf9577-45e1-4a82-af13-0363d311490f",
         "type": "software",
         "title": "rhel8",
         "description": "Red Hat Enterprise Linux 8",
@@ -157,6 +157,28 @@
             "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
             "value": "{'default': 'DEFAULT', 'default_policy': 'DEFAULT', 'default_nosha1': 'DEFAULT:NO-SHA1', 'fips': 'FIPS', 'fips_ospp': 'FIPS:OSPP', 'legacy': 'LEGACY', 'future': 'FUTURE', 'next': 'NEXT'}",
             "remarks": "rule_set_2"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "88d09de8-73d2-4451-9c8b-5e38dc85c028",
+            "source": "trestle://profiles/simplified_nist_profile/profile.json",
+            "description": "REPLACE_ME",
+            "set-parameters": [
+              {
+                "param-id": "var_sshd_set_keepalive",
+                "values": [
+                  "1"
+                ]
+              },
+              {
+                "param-id": "var_system_crypto_policy",
+                "values": [
+                  "fips"
+                ]
+              }
+            ],
+            "implemented-requirements": []
           }
         ]
       }
