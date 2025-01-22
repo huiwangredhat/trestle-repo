@@ -3,8 +3,8 @@
     "uuid": "1aad1114-e3bb-4cf4-aa24-6a5aaab03339",
     "metadata": {
       "title": "Component definition for rhel8",
-      "last-modified": "2025-01-22T20:14:49.707016+08:00",
-      "version": "1.2",
+      "last-modified": "2025-01-22T20:38:55.999759+08:00",
+      "version": "1.3",
       "oscal-version": "1.1.2"
     },
     "components": [
@@ -161,7 +161,7 @@
         ],
         "control-implementations": [
           {
-            "uuid": "80660502-0b8b-477d-91fe-d8d3dbcdc1e8",
+            "uuid": "190d145e-5c70-477f-b52e-e8187a31a3a3",
             "source": "trestle://profiles/simplified_nist_profile/profile.json",
             "description": "REPLACE_ME",
             "set-parameters": [
@@ -180,18 +180,18 @@
             ],
             "implemented-requirements": [
               {
-                "uuid": "bf8d7377-8b41-4f3b-9ffd-9b7a90de15be",
+                "uuid": "d62e5c5f-f363-423c-aa72-cd90f1bdbab0",
                 "control-id": "ac-1",
                 "description": "REPLACE_ME",
                 "statements": [
                   {
                     "statement-id": "ac-1_smt.a",
-                    "uuid": "d37fc579-2e34-4c87-bf72-e57ff22aab11",
+                    "uuid": "0c0ee0fc-08d9-45c9-829e-844f3919e9b3",
                     "description": "AC-1(a) is an organizational control outside the scope of OpenShift configuration."
                   },
                   {
                     "statement-id": "ac-1_smt.b",
-                    "uuid": "412bdaaf-b746-4575-b953-b3bb008df6ee",
+                    "uuid": "7b945ee4-b0b6-485b-87c3-fd6ee8a548be",
                     "description": "AC-1(b) is an organizational control outside the scope of OpenShift configuration."
                   }
                 ]
