@@ -3,8 +3,8 @@
     "uuid": "1aad1114-e3bb-4cf4-aa24-6a5aaab03339",
     "metadata": {
       "title": "Component definition for rhel8",
-      "last-modified": "2025-01-22T19:46:04.832569+08:00",
-      "version": "1.0",
+      "last-modified": "2025-01-22T20:02:16.845340+08:00",
+      "version": "1.1",
       "oscal-version": "1.1.2"
     },
     "components": [
@@ -161,7 +161,7 @@
         ],
         "control-implementations": [
           {
-            "uuid": "88d09de8-73d2-4451-9c8b-5e38dc85c028",
+            "uuid": "45dbf2c7-e8d5-4266-ba3d-eb6d23e55463",
             "source": "trestle://profiles/simplified_nist_profile/profile.json",
             "description": "REPLACE_ME",
             "set-parameters": [
