@@ -1,15 +1,15 @@
 {
   "component-definition": {
-    "uuid": "5cab8921-4a07-40e2-87fd-8367e15bef7e",
+    "uuid": "d2936f81-0d10-4d45-bf81-67f11babbc80",
     "metadata": {
       "title": "Component definition for rhel8",
-      "last-modified": "2025-01-22T20:40:59.870659+08:00",
+      "last-modified": "2025-01-23T04:10:12.187229+08:00",
       "version": "1.0",
       "oscal-version": "1.1.2"
     },
     "components": [
       {
-        "uuid": "ffbd808b-2742-4679-b373-0d79c5b4b618",
+        "uuid": "bbfcf248-04a2-4d7d-9de4-08fb618eafe4",
         "type": "software",
         "title": "rhel8",
         "description": "Red Hat Enterprise Linux 8",
@@ -161,7 +161,7 @@
         ],
         "control-implementations": [
           {
-            "uuid": "557d0051-6c23-4856-b018-6f7a98a91052",
+            "uuid": "3cbfdd34-eebb-4289-8511-66fbb88457db",
             "source": "trestle://profiles/simplified_nist_profile/profile.json",
             "description": "REPLACE_ME",
             "set-parameters": [
@@ -180,18 +180,18 @@
             ],
             "implemented-requirements": [
               {
-                "uuid": "94b70f55-74f1-4dcd-9010-98fb4ac8be45",
+                "uuid": "26d82150-c78f-4e02-8568-0c5800e1f968",
                 "control-id": "ac-1",
                 "description": "REPLACE_ME",
                 "statements": [
                   {
                     "statement-id": "ac-1_smt.a",
-                    "uuid": "faa250b5-4141-4099-98a1-86a2bb5e1d7f",
+                    "uuid": "067c7ea7-2219-4f79-bc7b-34b0128ccd74",
                     "description": "AC-1(a) is an organizational control outside the scope of OpenShift configuration."
                   },
                   {
                     "statement-id": "ac-1_smt.b",
-                    "uuid": "34fbb3ba-43da-43fb-bf1b-a1d4e741a17b",
+                    "uuid": "320d54c7-7334-4c84-9829-76eef295f38f",
                     "description": "AC-1(b) is an organizational control outside the scope of OpenShift configuration."
                   }
                 ]
