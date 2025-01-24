@@ -1,15 +1,15 @@
 {
   "component-definition": {
-    "uuid": "e8a888b7-41fa-4b44-bc1b-4fffcc5a00ee",
+    "uuid": "62927650-122e-4f60-a8fe-93393ecf0d2b",
     "metadata": {
       "title": "Component definition for rhel8",
-      "last-modified": "2025-01-24T11:17:06.742470+08:00",
-      "version": "1.1",
+      "last-modified": "2025-01-24T11:41:40.457454+08:00",
+      "version": "1.0",
       "oscal-version": "1.1.2"
     },
     "components": [
       {
-        "uuid": "5caabc27-6534-44c3-9b2d-99573af61808",
+        "uuid": "a0097c5b-16bb-430f-84a6-1f2ea73fc48a",
         "type": "software",
         "title": "rhel8",
         "description": "Red Hat Enterprise Linux 8",
@@ -161,7 +161,7 @@
         ],
         "control-implementations": [
           {
-            "uuid": "64a268a7-c563-4f04-8fbf-34d95c0eb9eb",
+            "uuid": "e1a15d8b-3c3f-4a13-b564-133a6d76f38d",
             "source": "trestle://profiles/simplified_nist_profile/profile.json",
             "description": "REPLACE_ME",
             "set-parameters": [
@@ -180,7 +180,7 @@
             ],
             "implemented-requirements": [
               {
-                "uuid": "91d9563d-78a7-49c9-b298-9536bbc21920",
+                "uuid": "61507fc1-7f75-4ca7-904c-60421ff21954",
                 "control-id": "ac-1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -194,12 +194,12 @@
                 "statements": [
                   {
                     "statement-id": "ac-1_smt.a",
-                    "uuid": "a362baab-2112-4465-b44d-9091cfb5f7cd",
+                    "uuid": "c147f53c-3bae-499e-8522-a2a74fe820e5",
                     "description": "AC-1(a) is an organizational control outside the scope of OpenShift configuration."
                   },
                   {
                     "statement-id": "ac-1_smt.b",
-                    "uuid": "d901e910-fa42-44ab-ab49-15585d70e53a",
+                    "uuid": "ddc04554-7df6-430d-92b1-1f3b03bc2931",
                     "description": "AC-1(b) is an organizational control outside the scope of OpenShift configuration."
                   }
                 ]
