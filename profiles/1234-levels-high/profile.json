@@ -1,0 +1,32 @@
+{
+  "profile": {
+    "uuid": "7c214e82-50bc-4c2f-879b-f5c68b67e60a",
+    "metadata": {
+      "title": "1234-levels-high",
+      "last-modified": "2025-01-24T14:11:33.472747+08:00",
+      "version": "REPLACE_ME",
+      "oscal-version": "1.1.2"
+    },
+    "imports": [
+      {
+        "href": "trestle:///Users/huiwang/trestle-repo/catalogs/simplified_nist_catalog/catalog.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "ac-1",
+              "ac-2",
+              "ac-2.3",
+              "ac-2.5"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "combine": {
+        "method": "merge"
+      },
+      "as-is": true
+    }
+  }
+}
