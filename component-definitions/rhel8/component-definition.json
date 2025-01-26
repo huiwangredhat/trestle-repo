@@ -3,8 +3,8 @@
     "uuid": "62927650-122e-4f60-a8fe-93393ecf0d2b",
     "metadata": {
       "title": "Component definition for rhel8",
-      "last-modified": "2025-01-26T09:41:55.098343+08:00",
-      "version": "1.3",
+      "last-modified": "2025-01-26T09:47:01.859051+08:00",
+      "version": "1.4",
       "oscal-version": "1.1.2"
     },
     "components": [
@@ -397,7 +397,7 @@
         ],
         "control-implementations": [
           {
-            "uuid": "7060efeb-ce93-4817-a855-709b7384375b",
+            "uuid": "c2c27426-e87e-4905-827a-1ccefa107bd2",
             "source": "trestle://profiles/simplified_nist_profile/profile.json",
             "description": "REPLACE_ME",
             "set-parameters": [
@@ -416,7 +416,7 @@
             ],
             "implemented-requirements": [
               {
-                "uuid": "1551958e-fd58-47be-8f34-cf48aa5c6164",
+                "uuid": "c7efcb29-f514-4328-bba2-27c01f0177cb",
                 "control-id": "ac-2",
                 "description": "",
                 "props": [
@@ -428,26 +428,26 @@
                 ]
               },
               {
-                "uuid": "f0fa3c5d-2d01-4968-84c3-6a6744caacf3",
+                "uuid": "3327aff9-4299-470a-80bf-741c729f70c3",
                 "control-id": "ac-1",
                 "description": "REPLACE_ME",
                 "props": [
                   {
                     "name": "implementation-status",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-                    "value": "not-applicable",
+                    "value": "alternative",
                     "remarks": "REPLACE_ME"
                   }
                 ],
                 "statements": [
                   {
                     "statement-id": "ac-1_smt.a",
-                    "uuid": "695dbc93-9816-4bf5-90b9-157a4fd2437c",
+                    "uuid": "d28a919d-74ac-4cf3-b4b5-8458e9f5164c",
                     "description": "AC-1(a) is an organizational control outside the scope of OpenShift configuration."
                   },
                   {
                     "statement-id": "ac-1_smt.b",
-                    "uuid": "4bea7bda-0d90-40a5-93d0-d491b17eca89",
+                    "uuid": "72eeacef-b903-4869-96fc-11d90b1a9ff5",
                     "description": "AC-1(b) is an organizational control outside the scope of OpenShift configuration."
                   }
                 ]
