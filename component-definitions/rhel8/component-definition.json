@@ -3,8 +3,8 @@
     "uuid": "62927650-122e-4f60-a8fe-93393ecf0d2b",
     "metadata": {
       "title": "Component definition for rhel8",
-      "last-modified": "2025-01-24T11:42:04.558794+08:00",
-      "version": "1.1",
+      "last-modified": "2025-01-26T09:27:27.335759+08:00",
+      "version": "1.2",
       "oscal-version": "1.1.2"
     },
     "components": [
@@ -397,7 +397,7 @@
         ],
         "control-implementations": [
           {
-            "uuid": "7e271bec-05d1-45e7-984b-4e0625ed49c9",
+            "uuid": "b6765887-04a7-475b-a4dd-3f5b13485c56",
             "source": "trestle://profiles/simplified_nist_profile/profile.json",
             "description": "REPLACE_ME",
             "set-parameters": [
@@ -416,26 +416,25 @@
             ],
             "implemented-requirements": [
               {
-                "uuid": "44d91614-1993-4aee-a7da-15d69276f3ac",
+                "uuid": "ed0c2701-3e55-4851-8562-49cf9fdd92a7",
                 "control-id": "ac-1",
                 "description": "REPLACE_ME",
                 "props": [
                   {
                     "name": "implementation-status",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-                    "value": "not-applicable",
-                    "remarks": "REPLACE_ME"
+                    "value": "implemented"
                   }
                 ],
                 "statements": [
                   {
                     "statement-id": "ac-1_smt.a",
-                    "uuid": "b2c25d97-c372-436b-9843-8fdd8900d88b",
+                    "uuid": "f54abe63-0afe-4fe2-91d1-0775313f6ae3",
                     "description": "AC-1(a) is an organizational control outside the scope of OpenShift configuration."
                   },
                   {
                     "statement-id": "ac-1_smt.b",
-                    "uuid": "efb19d45-51d1-452a-83ee-f96eb3fae34b",
+                    "uuid": "ecb241c7-e599-4897-bb04-24532c78c2b3",
                     "description": "AC-1(b) is an organizational control outside the scope of OpenShift configuration."
                   }
                 ]
