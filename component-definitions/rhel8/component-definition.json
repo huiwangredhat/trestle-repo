@@ -3,8 +3,8 @@
     "uuid": "62927650-122e-4f60-a8fe-93393ecf0d2b",
     "metadata": {
       "title": "Component definition for rhel8",
-      "last-modified": "2025-01-26T09:47:01.859051+08:00",
-      "version": "1.4",
+      "last-modified": "2025-01-26T09:48:54.386853+08:00",
+      "version": "1.5",
       "oscal-version": "1.1.2"
     },
     "components": [
@@ -397,7 +397,7 @@
         ],
         "control-implementations": [
           {
-            "uuid": "c2c27426-e87e-4905-827a-1ccefa107bd2",
+            "uuid": "c5cfb2cc-1bb9-4f7f-8c0c-c3d778be2125",
             "source": "trestle://profiles/simplified_nist_profile/profile.json",
             "description": "REPLACE_ME",
             "set-parameters": [
@@ -416,38 +416,38 @@
             ],
             "implemented-requirements": [
               {
-                "uuid": "c7efcb29-f514-4328-bba2-27c01f0177cb",
+                "uuid": "5c18fd3b-6556-43be-b0bf-197d70f62a48",
                 "control-id": "ac-2",
-                "description": "",
-                "props": [
-                  {
-                    "name": "implementation-status",
-                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-                    "value": "implemented"
-                  }
-                ]
-              },
-              {
-                "uuid": "3327aff9-4299-470a-80bf-741c729f70c3",
-                "control-id": "ac-1",
                 "description": "REPLACE_ME",
                 "props": [
                   {
                     "name": "implementation-status",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "alternative",
-                    "remarks": "REPLACE_ME"
+                    "remarks": ""
+                  }
+                ]
+              },
+              {
+                "uuid": "e47c23ea-129e-48cd-b80d-9a4b35d813f1",
+                "control-id": "ac-1",
+                "description": "REPLACE_ME",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "implemented"
                   }
                 ],
                 "statements": [
                   {
                     "statement-id": "ac-1_smt.a",
-                    "uuid": "d28a919d-74ac-4cf3-b4b5-8458e9f5164c",
+                    "uuid": "91767c40-82c4-42a8-ab77-00dbe1a04803",
                     "description": "AC-1(a) is an organizational control outside the scope of OpenShift configuration."
                   },
                   {
                     "statement-id": "ac-1_smt.b",
-                    "uuid": "72eeacef-b903-4869-96fc-11d90b1a9ff5",
+                    "uuid": "00133afb-cb36-4390-8d34-b79b5421e4e0",
                     "description": "AC-1(b) is an organizational control outside the scope of OpenShift configuration."
                   }
                 ]
