@@ -13017,18 +13017,6 @@
             "remarks": "rule_set_196"
           },
           {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "version_detect_in_ocp",
-            "remarks": "rule_set_197"
-          },
-          {
-            "name": "Rule_Description",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "This is a helper rule to fetch the required api resource for detecting OCP version",
-            "remarks": "rule_set_197"
-          },
-          {
             "name": "Parameter_Id",
             "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
             "value": "var_event_record_qps",
@@ -41625,18 +41613,6 @@
             "remarks": "rule_set_196"
           },
           {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "version_detect_in_ocp",
-            "remarks": "rule_set_197"
-          },
-          {
-            "name": "Rule_Description",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "This is a helper rule to fetch the required api resource for detecting OCP version",
-            "remarks": "rule_set_197"
-          },
-          {
             "name": "Parameter_Id",
             "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
             "value": "var_event_record_qps",
@@ -41688,18 +41664,6 @@
             "name": "Parameter_Value_Alternatives",
             "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
             "value": "{'default': 'Default', 'Default': 'Default', 'WriteRequestBodies': 'WriteRequestBodies', 'AllRequestBodies': 'AllRequestBodies'}",
-            "remarks": "rule_set_197"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "version_detect_in_ocp",
-            "remarks": "rule_set_197"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
-            "value": "This is a helper rule to fetch the required api resource for detecting OCP version",
             "remarks": "rule_set_197"
           },
           {
