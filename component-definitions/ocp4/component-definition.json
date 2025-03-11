@@ -13017,6 +13017,18 @@
             "remarks": "rule_set_196"
           },
           {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "version_detect_in_ocp",
+            "remarks": "rule_set_197"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "This is a helper rule to fetch the required api resource for detecting OCP version",
+            "remarks": "rule_set_197"
+          },
+          {
             "name": "Parameter_Id",
             "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
             "value": "var_event_record_qps",
@@ -13267,6 +13279,18 @@
             "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
             "value": "{'default': 'Default', 'Default': 'Default', 'WriteRequestBodies': 'WriteRequestBodies', 'AllRequestBodies': 'AllRequestBodies'}",
             "remarks": "rule_set_200"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "routes_protected_by_tls",
+            "remarks": "rule_set_201"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure that all OpenShift Routes prefer TLS",
+            "remarks": "rule_set_201"
           },
           {
             "name": "Parameter_Id",
@@ -17215,6 +17239,11 @@
                     "name": "Rule_Id",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "configure_network_policies_namespaces"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "routes_protected_by_tls"
                   }
                 ]
               },
@@ -17628,6 +17657,11 @@
                     "name": "implementation-status",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "implemented"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "routes_protected_by_tls"
                   }
                 ]
               },
@@ -25122,6 +25156,11 @@
                   {
                     "name": "Rule_Id",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "routes_protected_by_tls"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "ocp_no_ldap_insecure"
                   },
                   {
@@ -25300,6 +25339,11 @@
                     "name": "Rule_Id",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "etcd_peer_auto_tls"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "routes_protected_by_tls"
                   },
                   {
                     "name": "Rule_Id",
@@ -25908,6 +25952,11 @@
                     "name": "Rule_Id",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "configure_network_policies_namespaces"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "routes_protected_by_tls"
                   }
                 ]
               },
@@ -41576,6 +41625,18 @@
             "remarks": "rule_set_196"
           },
           {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "version_detect_in_ocp",
+            "remarks": "rule_set_197"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "This is a helper rule to fetch the required api resource for detecting OCP version",
+            "remarks": "rule_set_197"
+          },
+          {
             "name": "Parameter_Id",
             "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
             "value": "var_event_record_qps",
@@ -41627,6 +41688,18 @@
             "name": "Parameter_Value_Alternatives",
             "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
             "value": "{'default': 'Default', 'Default': 'Default', 'WriteRequestBodies': 'WriteRequestBodies', 'AllRequestBodies': 'AllRequestBodies'}",
+            "remarks": "rule_set_197"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "version_detect_in_ocp",
+            "remarks": "rule_set_197"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "This is a helper rule to fetch the required api resource for detecting OCP version",
             "remarks": "rule_set_197"
           },
           {
@@ -41864,6 +41937,18 @@
             "remarks": "rule_set_200"
           },
           {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "routes_protected_by_tls",
+            "remarks": "rule_set_201"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure that all OpenShift Routes prefer TLS",
+            "remarks": "rule_set_201"
+          },
+          {
             "name": "Parameter_Id",
             "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
             "value": "var_event_record_qps",
@@ -41915,6 +42000,18 @@
             "name": "Parameter_Value_Alternatives",
             "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
             "value": "{'default': 'Default', 'Default': 'Default', 'WriteRequestBodies': 'WriteRequestBodies', 'AllRequestBodies': 'AllRequestBodies'}",
+            "remarks": "rule_set_201"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "routes_protected_by_tls",
+            "remarks": "rule_set_201"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure that all OpenShift Routes prefer TLS",
             "remarks": "rule_set_201"
           },
           {
@@ -46458,6 +46555,11 @@
                     "name": "Rule_Id",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "configure_network_policies_namespaces"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "routes_protected_by_tls"
                   }
                 ]
               },
@@ -46871,7 +46973,12 @@
                     "name": "implementation-status",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "implemented"
-		   }
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "routes_protected_by_tls"
+                  }
                 ]
               },
               {
@@ -54365,6 +54472,11 @@
                   {
                     "name": "Rule_Id",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "routes_protected_by_tls"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "ocp_no_ldap_insecure"
                   },
                   {
@@ -54543,6 +54655,11 @@
                     "name": "Rule_Id",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "etcd_peer_auto_tls"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "routes_protected_by_tls"
                   },
                   {
                     "name": "Rule_Id",
@@ -55151,6 +55268,11 @@
                     "name": "Rule_Id",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "configure_network_policies_namespaces"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "routes_protected_by_tls"
                   }
                 ]
               },
