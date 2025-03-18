@@ -16954,6 +16954,11 @@
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "not-applicable",
                     "remarks": "REPLACE_ME"
+                  },
+		  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "idp_is_testing.."
                   }
                 ],
                 "statements": []
@@ -16972,6 +16977,11 @@
                     "name": "Rule_Id",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "idp_is_configured"
+                  },
+		  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "idp_is_testing"
                   }
                 ],
                 "statements": []
