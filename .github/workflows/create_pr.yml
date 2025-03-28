@@ -1,0 +1,36 @@
+name: Create Pull Request
+on:
+  create:
+    ref_type: branch
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Checkout new branch
+        run: |
+          # The branch name is available in the GITHUB_REF environment variable
+          BRANCH_NAME=${GITHUB_REF#refs/heads/}
+          echo "Checking out branch: $BRANCH_NAME"
+          git checkout $BRANCH_NAME
+
+      # Optional step: Perform actions or modifications on the new branch
+      # - name: Make changes to the repository (if needed)
+      #   run: |
+      #     # Add any necessary commands here
+      #     echo "Making changes on $BRANCH_NAME"
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref_name }}  # Use the newly created branch name
+          base: main  # The base branch you want to merge into
+          title: "Auto PR for ${{ github.ref_name }}"
+          body: "This PR is automatically created for the new branch ${{ github.ref_name }}."
+          draft: false
