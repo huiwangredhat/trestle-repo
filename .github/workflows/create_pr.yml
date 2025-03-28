@@ -3,7 +3,6 @@ name: Create PR for New Branch
 on:
   push:
     # This event will be triggered when a new branch is created
-    branches-ignore: ["main"]
     branches:
       - '**test**'
 
