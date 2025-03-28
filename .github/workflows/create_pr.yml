@@ -1,10 +1,10 @@
 name: Create PR for New Branch
 
 on:
-  push:
+  create:
     # This event will be triggered when a new branch is created
     branches:
-      - '**test**'
+      - 'test15'
 
 jobs:
   create-pr:
@@ -14,13 +14,18 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - uses: action/checkout@v4
-      - name: Create Pull Request action
-        uses: peter-evans/create-pull-request@v7
+      - name: Checkout code into subdirectory
+        uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}  # Use your GITHUB_TOKEN to authenticate
-          title: "[Auto PR] $BRANCH_NAME"  # Specify a title for your pull request
-          body: "This pull request was automatically created for the new branch $BRANCH_NAME."  # Add any additional information you want in the PR body
-          branch: ${{github.ref_name}}
-          base: "main"
-          draft: false  # Whether the PR should be created as a draft (false means it will be submitted as a regular PR)
+          repository: huiwangredhat/trestle-repo
+          ref: test15
+          path: trestle-repo
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: "test15"  # Source branch (in the subdirectory)
+          base: "main"               # Target branch (main)
+          title: "Sync Cac Automatic updates from trestle-bot"   # Customize PR title
+          body: "Description of changes in the specified subdirectory"  # PR description in the subdirectory
+          draft: false 
