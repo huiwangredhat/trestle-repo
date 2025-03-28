@@ -2,25 +2,34 @@ name: Create PR for New Branch
 
 on:
   push:
-    # This event will be triggered when a new branch is created
-    branches:
-      - '**test**'
+    branches-ignore:
+      - 'main'
 
 jobs:
   create-pr:
-    if: contains(github.ref_name, '**test**')
+    if: github.event.created
     runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
     steps:
-      - uses: action/checkout@v4
-      - name: Create Pull Request action
+      - name: Checkout code into subdirectory
+        uses: actions/checkout@v4
+        with:
+          ref: test17
+          path: trestle-repo
+      - name: Create Pull Request
+        id: crp
         uses: peter-evans/create-pull-request@v7
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}  # Use your GITHUB_TOKEN to authenticate
-          title: "[Auto PR] $BRANCH_NAME"  # Specify a title for your pull request
-          body: "This pull request was automatically created for the new branch $BRANCH_NAME."  # Add any additional information you want in the PR body
-          branch: ${{github.ref_name}}
-          base: "main"
-          draft: false  # Whether the PR should be created as a draft (false means it will be submitted as a regular PR)
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: test17
+          base: "main"               # Target branch (main)
+          title: "Sync Cac Automatic updates from trestle-bot"   # Customize PR title
+          body: "Description of changes in the specified subdirectory"  # PR description in the subdirectory
+          draft: false 
+      - name: Check outputs
+        if: ${{ steps.cpr.outputs.pull-request-number }}
+        run: |
+          echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
+          echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
