@@ -33,4 +33,3 @@ jobs:
           title: "[Auto PR] $BRANCH_NAME"  # Specify a title for your pull request
           body: "This pull request was automatically created for the new branch $BRANCH_NAME."  # Add any additional information you want in the PR body
           draft: false  # Whether the PR should be created as a draft (false means it will be submitted as a regular PR)
-          labels: auto-pr  # Add any labels you want to apply to the PR (optional)
