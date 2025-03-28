@@ -3,12 +3,11 @@ name: Create PR for New Branch
 on:
   push:
     # This event will be triggered when a new branch is created
-    branches:
-      - '**test**'
+    branches-ignore: [main]
 
 jobs:
   create-pr:
-    if: contains(github.ref_name, '**test**')
+    if: contains(github.ref_name, 'test')
     runs-on: ubuntu-latest
     permissions:
       contents: write
