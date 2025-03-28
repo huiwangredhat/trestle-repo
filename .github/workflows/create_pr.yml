@@ -1,0 +1,36 @@
+name: Create PR for New Branch
+
+on:
+  create:
+    # This event will be triggered when a new branch is created
+    branches:
+      # You can specify the pattern to match the new branches
+      # For example, if you want to trigger for all new branches, use '*'
+      - '*'
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Fetch all history so we can checkout the newly created branch
+          fetch-depth: 0
+
+      - name: Checkout new branch
+        run: |
+          BRANCH_NAME=$(echo ${GITHUB_REF#refs/heads/} | tr -d '[:space:]')
+          echo "Current branch is $BRANCH_NAME"
+          git checkout $BRANCH_NAME  # Optionally checkout the new branch here
+
+      - name: Create Pull Request action
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}  # Use your GITHUB_TOKEN to authenticate
+          branch: ${{ github.event.ref }}  # Use the newly created branch name as the head branch
+          base: main  # Specify the base branch where you want to merge the PR (e.g., main, development, etc.)
+          title: "[Auto PR] $BRANCH_NAME"  # Specify a title for your pull request
+          body: "This pull request was automatically created for the new branch $BRANCH_NAME."  # Add any additional information you want in the PR body
+          draft: false  # Whether the PR should be created as a draft (false means it will be submitted as a regular PR)
+          labels: auto-pr  # Add any labels you want to apply to the PR (optional)
