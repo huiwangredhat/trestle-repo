@@ -25,7 +25,7 @@ jobs:
           git checkout $BRANCH_NAME  # Optionally checkout the new branch here
 
       - name: Create Pull Request action
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}  # Use your GITHUB_TOKEN to authenticate
           branch: ${{ github.event.ref }}  # Use the newly created branch name as the head branch
