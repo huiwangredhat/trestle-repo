@@ -3,12 +3,12 @@ name: Create PR for New Branch
 on:
   push:
     # This event will be triggered when a new branch is created
-    branches:
-      - '**test**'
+    branches-ignore: 
+      - 'main'
 
 jobs:
   create-pr:
-    if: contains(github.ref_name, '**test**')
+    if: contains(github.ref_name, 'test')
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -19,8 +19,8 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}  # Use your GITHUB_TOKEN to authenticate
-          title: "[Auto PR] $BRANCH_NAME"  # Specify a title for your pull request
-          body: "This pull request was automatically created for the new branch $BRANCH_NAME."  # Add any additional information you want in the PR body
-          branch: ${{github.ref_name}}
+          title: "create pr from ${{github.ref_name}} to main"  # Specify a title for your pull request
+          body: "This pull request was automatically created for the new branch."  # Add any additional information you want in the PR body
+          branch: "${{github.ref_name}}"
           base: "main"
           draft: false  # Whether the PR should be created as a draft (false means it will be submitted as a regular PR)
