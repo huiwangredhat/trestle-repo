@@ -8,6 +8,9 @@ on:
 jobs:
   create-pr-for-new-branches:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
 
     steps:
       - name: Checkout the repository code
