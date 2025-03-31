@@ -24,29 +24,9 @@ jobs:
           # List all remote branches starting with 'sync_cac/'
           sync_cac_branches=$(git branch -r | grep 'origin/sync_cac/' | sed 's/origin\///')
           echo "sync_cac/ branches found: $sync_cac_branches"
-
-          # Check if we have a file storing the previously known branches
-          if [ ! -f sync_cac_branches.txt ]; then
-            echo "No previous sync_cac/ branch list found. Creating one."
-            echo "$sync_cac_branches" > sync_cac_branches.txt
-            echo "sync_cac/ branch list saved."
-          else
-            # Compare and find new sync_cac/ branches
-            new_sync_cac_branches=$(comm -13 <(sort sync_cac_branches.txt) <(echo "$sync_cac_branches" | sort))
-            if [ -z "$new_sync_cac_branches" ]; then
-              echo "No new sync_cac/ branches found."
-            else
-              echo "New sync_cac/ branches detected: $new_sync_cac_branches"
-              echo "$new_sync_cac_branches" > sync_cac_branches.txt
-              echo "Updated sync_cact/ branch list."
-              
-              # Create a PR for each new sync_cac/ branch
-              for branch in $new_sync_cac_branches; do
-                echo "Creating PR for new branch: $branch"
-                gh pr create --base main --head $branch --title "Auto PR for $branch" --body "This is an auto-created PR for the new branch $branch" --label "auto-pr" --draft
-              done
-            fi
-          fi
-          
-          # Update sync_cac_branches.txt with the latest list of branches
-          echo "$sync_cac_branches" > sync_cac_branches.txt
+         
+          # Create a PR for each new sync_cac/ branch
+          for branch in $new_sync_cac_branches; do
+            echo "Creating PR for new branch: $branch"
+            gh pr create --base main --head $branch --title "Auto PR for $branch" --body "This is an auto-created PR for the new branch $branch" --label "auto-pr" --draft
+          done
