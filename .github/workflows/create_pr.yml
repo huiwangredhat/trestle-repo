@@ -12,6 +12,11 @@ jobs:
     steps:
       - name: Checkout the repository code
         uses: actions/checkout@v4
+      
+      - name: Set up GitHub CLI
+        uses: cli/cli-action@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Fetch all remote branches
         run: |
@@ -28,5 +33,5 @@ jobs:
           # Create a PR for each new sync_cac/ branch
           for branch in $sync_cac_branches; do
             echo "Creating PR for new branch: $branch"
-            gh pr create --base main --head $branch --title "Auto PR for $branch" --body "This is an auto-created PR for the new branch $branch" --label "auto-pr" --draft
+            gh pr create --base main --head $branch --title "Auto PR for $branch" --body "This is an auto-created PR for the new branch $branch" --label "auto-pr" --draft 
           done
