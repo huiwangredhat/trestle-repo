@@ -24,9 +24,16 @@ jobs:
           # List all remote branches starting with 'sync_cac/'
           sync_cac_branches=$(git branch -r | grep 'origin/sync_cac/' | sed 's/origin\///')
           echo "sync_cac/ branches found: $sync_cac_branches"
-          gh auth login --with-token ${{ secrets.GITHUB_TOKEN }}
           # Create a PR for each new sync_cac/ branch
           for branch in $sync_cac_branches; do
             echo "Creating PR for new branch: $branch"
-            gh pr create --base main --head $branch --title "Auto PR for $branch" --body "This is an auto-created PR for the new branch $branch" --label "auto-pr" --draft 
+            curl -X POST https://api.github.com/repos/${{ github.repository }}/pulls \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -d '{
+              "title": "Auto PR for '\"$branch\"'",
+              "head": "'\"$branch\"'",
+              "base": "main",
+              "body": "This is an auto-created PR for the new branch '$branch'",
+              "draft": true
+              }'
           done
