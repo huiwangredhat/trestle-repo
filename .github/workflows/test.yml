@@ -1,0 +1,25 @@
+name: test create pr
+on:
+  schedule:
+    - cron: '0 12 * * *'  # Run daily at 12:00 PM (adjust as necessary)
+  workflow_dispatch:
+
+jobs:
+  test-create-pr:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create Pull Request
+        id: crp
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: "sync_cac/test"  # Source branch (in the subdirectory)
+          base: "main"               # Target branch (main)
+          title: "Sync Cac Automatic updates from trestle-bot"   # Customize PR title
+          body: "Description of changes in the specified subdirectory"  # PR description in the subdirectory
+          draft: false 
+
