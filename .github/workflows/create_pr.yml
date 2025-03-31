@@ -12,13 +12,6 @@ jobs:
     steps:
       - name: Checkout the repository code
         uses: actions/checkout@v4
-      
-      - name: Set up GitHub CLI
-        run: |
-          # Install GitHub CLI
-          sudo apt-get update
-          sudo apt-get install gh
-          gh auth login --with-token ${{ secrets.GITHUB_TOKEN }}
 
       - name: Fetch all remote branches
         run: |
@@ -31,7 +24,7 @@ jobs:
           # List all remote branches starting with 'sync_cac/'
           sync_cac_branches=$(git branch -r | grep 'origin/sync_cac/' | sed 's/origin\///')
           echo "sync_cac/ branches found: $sync_cac_branches"
-         
+          gh auth login --with-token ${{ secrets.GITHUB_TOKEN }}
           # Create a PR for each new sync_cac/ branch
           for branch in $sync_cac_branches; do
             echo "Creating PR for new branch: $branch"
