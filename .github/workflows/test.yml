@@ -16,24 +16,33 @@ jobs:
         uses: actions/checkout@v4
         with: 
           token: ${{ secrets.GITHUB_TOKEN }}
-
+      - name: Fetch all remote branches
+        run: |
+          git fetch --all
+          echo "Fetching all branches from the remote repository."
+      
       - name: Create a Pull Request
         run: |
+          # List all remote branches starting with 'sync_cac/'
+          sync_cac_branches=$(git branch -r | grep 'origin/sync_cac/' | sed 's/origin\///')
+          echo "sync_cac/ branches found: $sync_cac_branches"
           # Use GitHub's REST API to create a pull request
-          PR_RESPONSE=$(curl -s -X POST \
-            -H "Accept: application/vnd.github+json" \
-            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            https://api.github.com/repos/${{ github.repository }}/pulls \
-            -d '{
-              "title": "Auto-generated PR for feature-branch",
-              "head": "test_branch1",
-              "base": "main",
-              "body": "This is an auto-generated PR for feature-branch",
-              "draft": false
-            }')
-
-          # Extract the PR URL from the response
-          PR_URL=$(echo $PR_RESPONSE | jq -r '.html_url')
-
-          echo "Pull Request created: $PR_URL"
+          for branch in $sync_cac_branches; do
+            echo $($branch)
+            PR_RESPONSE=$(curl -s -X POST \
+              -H "Accept: application/vnd.github+json" \
+              -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              https://api.github.com/repos/${{ github.repository }}/pulls \
+              -d '{
+                "title": "Auto-generated PR for feature-branch",
+                "head": $branch,
+                "base": "main",
+                "body": "This is an auto-generated PR for feature-branch",
+                "draft": false
+              }')
+            # Extract the PR URL from the response
+            echo $PR_RESPONSE
+            PR_URL=$(echo $PR_RESPONSE | jq -r '.html_url')
+            echo "Pull Request created: $PR_URL"
+          done
