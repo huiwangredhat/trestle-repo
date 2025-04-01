@@ -35,7 +35,7 @@ jobs:
               https://api.github.com/repos/${{ github.repository }}/pulls \
               -d '{
                 "title": "Auto-generated PR for feature-branch",
-                "head": "$branch",
+                "head": "{$branch}",
                 "base": "main",
                 "body": "This is an auto-generated PR for feature-branch",
                 "draft": false
