@@ -13,7 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.TOKEN }}
           ref: 'test_branch'
       - name: Create Pull Request
         id: crp
