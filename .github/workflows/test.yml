@@ -20,7 +20,6 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: "test_branch"  # Source branch (in the subdirectory)
           base: "main"               # Target branch (main)
           title: "Sync Cac Automatic updates from trestle-bot"   # Customize PR title
           body: "Description of changes in the specified subdirectory"  # PR description in the subdirectory
