@@ -26,9 +26,10 @@ jobs:
           # List all remote branches starting with 'sync_cac/'
           sync_cac_branches=$(git branch -r | grep 'origin/sync_cac/' | sed 's/origin\///')
           echo "sync_cac/ branches found: $sync_cac_branches"
+          echo "sync_cac_branches is $sync_cac_branches"
           # Use GitHub's REST API to create a pull request
           for branch in $sync_cac_branches; do
-            echo $($branch)
+            echo $branch
             PR_RESPONSE=$(curl -s -X POST \
               -H "Accept: application/vnd.github+json" \
               -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
