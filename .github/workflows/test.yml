@@ -31,20 +31,21 @@ jobs:
           done
           # Use GitHub's REST API to create a pull request
           for branch in $sync_cac_branches; do
-            PR_RESPONSE=$(curl -s -X POST \
+            PR_RESPONSE=$(curl -s -o response.json -X POST \
               -H "Accept: application/vnd.github+json" \
               -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
               -H "X-GitHub-Api-Version: 2022-11-28" \
               https://api.github.com/repos/${{ github.repository }}/pulls \
-              -d '{
-                "title": "Auto-generated PR for feature-branch",
-                "head": "$branch",
-                "base": "main",
-                "body": "This is an auto-generated PR for feature-branch",
-                "draft": false
-              }')
+              -d "{
+                \"title\": \"Auto-generated PR for $branch\",
+                \"head\": \"$branch\",
+                \"base\": \"main\",
+                \"body\": \"This is an auto-generated PR for feature-branch\",
+                \"draft\": false
+              }")
             # Extract the PR URL from the response
             echo $PR_RESPONSE
+            cat response.json
             PR_URL=$(echo $PR_RESPONSE | jq -r '.html_url')
             echo "Pull Request created: $PR_URL"
           done
