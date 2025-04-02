@@ -4637,6 +4637,11 @@
                   {
                     "id": "au-12.3_smt",
                     "name": "statement"
+                  },
+                  {
+                    "id": "au-12.3_gdn",
+                    "name": "guidance",
+                    "prose": " This control enhancement enables organizations to extend or limit auditing as necessary to meet organizational requirements. Auditing that is limited to conserve information system resources may be extended to address certain threat situations. In addition, auditing may be limited to a specific set of events to facilitate audit reduction, analysis, and reporting. Organizations can establish time thresholds in which audit actions are changed, for example, near real-time, within minutes, or within hours. Related control: AU-7."
                   }
                 ]
               }
@@ -4873,6 +4878,11 @@
               {
                 "id": "ca-1_smt",
                 "name": "statement"
+              },
+              {
+                "id": "ca-1_gdn",
+                "name": "guidance",
+                "prose": "This control addresses the establishment of policy and procedures for the effective implementation of selected security controls and control enhancements in the CA family. Policy and procedures reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance. Security program policies and procedures at the organization level may make the need for system-specific policies and procedures unnecessary. The policy can be included as part of the general information security policy for organizations or conversely, can be represented by multiple policies reflecting the complex nature of certain organizations. The procedures can be established for the security program in general and for particular information systems, if needed. The organizational risk management strategy is a key factor in establishing policy and procedures. Related control: PM-9."
               }
             ]
           },
@@ -14342,6 +14352,11 @@
                   {
                     "id": "ps-4.2_smt",
                     "name": "statement"
+                  },
+                  {
+                    "id": "ps-4.2_gdn",
+                    "name": "guidance",
+                    "prose": " In organizations with a large number of employees, not all personnel who need to know about termination actions receive the appropriate notifications—or, if such notifications are received, they may not occur in a timely manner. Automated mechanisms"
                   }
                 ]
               }
